@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta content="telephone=no" name="format-detection">
+    <!-- <link rel="stylesheet" href="css/reset.css" type=text/css> -->
+    <link rel="stylesheet" href="css/style.css" type=text/css>
+    <link rel="stylesheet" href="css/animate.css" type=text/css>
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <script src="js/lib/jquery-1.10.1.min.js"></script>
+    <title>2020年“世界海洋日”暨“全国海洋宣传日”</title>
+</head>
+
+<body class="content hidden">
+    <div>
+        <div class="con">
+            <audio autoplay="autoplay" loop="loop" src="audio/1.mp3" id="Jaudio"></audio>
+            <div class="music play" id="music">
+                <p>
+                    <i class="iconfont icon-yinle"></i>
+                </p>
+            </div>
+
+            <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+            <script>
+                //一般情况下，这样就可以自动播放了，但是一些iPhone机不可以
+                document.getElementById('Jaudio').play();
+                //必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效
+                document.addEventListener("WeixinJSBridgeReady", function() {
+                    document.getElementById('Jaudio').play();
+                }, false);
+            </script>
+            <script>
+                // 音乐开关并设置图标旋转停止
+                $("#music").click(function() {
+                    var music = document.getElementById("Jaudio");
+                    if (music.paused) {
+                        music.play();
+                        this.setAttribute("class", "play")
+                    } else {
+                        music.pause();
+                        this.setAttribute("class", "")
+                    }
+                });
+            </script>
+            <!-- 第1p的内容  -->
+            <div class="relativeDiv">
+                <img class="bg1" src="images/bg001.png" />
+                <img class="biaoti2" src="images/AnimatedText1.png" alt="">
+                <img src="images/cloud.png" alt="" class="cloud01">
+                <img src="images/cloud2.png" alt="" class="cloud002">
+                <img src="images/cloud3.png" alt="" class="cloud003">
+                <img class="upjiantou" src="images/downArrow.png" alt="">
+            </div>
+            <!-- 第2p的内容 -->
+            <div class="relativeDiv">
+                <img class="bg1" src="images/bg002.png" />
+                <div class="windmillWrap1">
+                    <img class="windmill1" src="images/windmill.png" alt="">
+                    <img class="windmillstick1" src="images/windmillstick.png" alt="">
+                </div>
+                <div class="windmillWrap2">
+                    <img class="windmill2" src="images/windmill.png" alt="">
+                    <img class="windmillstick1" src="images/windmillstick.png" alt="">
+                </div>
+                <div class="windmillWrap3">
+                    <img class="windmill3" src="images/windmill.png" alt="">
+                    <img class="windmillstick1" src="images/windmillstick.png" alt="">
+                </div>
+                <div>
+                    <img class="ship" src="images/ship.png" alt="">
+                    <div class="cirWrap">
+                        <div class="cir0">
+                        </div>
+                        <div class="cir1">
+                        </div>
+                        <div class="cir2">
+                        </div>
+                        <div class="cir3">
+                        </div>
+                        <div class="cir4">
+                        </div>
+                    </div>
+                </div>
+
+                <img class="pop1" src="images/pop1.png">
+                <img class="pop2" src="images/pop2.png">
+                <img class="pop3" src="images/pop3.png">
+                <img class="title" src="images/title.png">
+                <img class="title1" src="images/title1.png">
+
+                <div class="cirWrap2">
+                    <div class="cir20">
+                    </div>
+                    <div class="cir21">
+                    </div>
+                    <img class="cloudUpDown" src="images/cloudeUpDown.png">
+                </div>
+            </div>
+            <!-- 第3p的内容 -->
+            <div class="relativeDiv">
+                <img class="bg1" src="images/bg003.png" />
+                <img class="cloudcoverriver" src="images/cloudcoverriver.png" />
+                <div class="cirWrap1">
+                    <div class="cir10">
+                    </div>
+                    <div class="cir11">
+                    </div>
+                </div>
+                <img class="title2" src="images/title2.png">
+                <img class="pop5" src="images/pop5.png">
+                <img class="pop6" src="images/pop6.png">
+            </div>
+            <!-- 第4p的内容 -->
+            <div class="relativeDiv">
+                <img class="bg4" src="images/bg004.png" />
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- loading页面 -->
+    <div class="load">
+        <div class="load2">
+            <div class="quan">
+                <canvas id="canvas" width="300" height="500"></canvas>
+                <div class="pics">
+                    <img src="./images/loading/1.png" style="width: 100%;height: auto;" id="pic">
+                </div>
+                <div class="loading">0%</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+    let dataPop = [];
+
+    //绘制单个div
+    function setDiv(item, i) {
+        let textArea = "";
+        item.textArea.Paragraph.forEach(y => {
+            textArea += ` <h3 class="${item.h3ClassName}">${y.ParagraphHead}</h3>`;
+            y.ParagraphContent.forEach(z => {
+                textArea += `<p>${z}</p>`;
+            })
+
+        });
+
+        let contentImg = '';
+        item.textArea.contentImgSrc.forEach(imgSrc => {
+            contentImg += `<img src="${imgSrc}" class="poptitle1" alt="">`
+        })
+
+
+        let temp = `
+            <div class="${item.divClassName}">
+            <div class="zhezhao2">
+            <div class="popbg${i+1} ma">
+                <h2> ${item.textArea.title}</h2>
+                <div class="scrollDiv">
+                    <img src=" ${item.titleImg}" alt="">
+                    <div class="intro ma">
+                        ${textArea}
+                    </div>
+                    ${contentImg}
+                </div>
+                <div class="${item.closeClassName}"> 关 闭</div>
+            </div>
+        </div>
+        </div>
+            `
+        return temp;
+
+    }
+
+
+
+    //循环加载到页面
+    function getnoApplicationData() {
+        var html = ''
+        for (var i = 0; i < dataPop.length; i++) {
+            let divTemp = setDiv(dataPop[i], i);
+            $(document.body).append(divTemp);
+        }
+    }
+    $.get('./assets/pop.json', (data) => {
+        dataPop = data;
+        debugger
+    }).then(() => {
+        getnoApplicationData();
+    })
+</script>
+<script type="text/javascript">
+    $(window).load(function() {
+        let screenHeight = $(".bg1").height();
+        let screenWidth = $(".bg1").width();
+        $(".pop1").css('top', 1016 / 2436 * screenHeight);
+        $(".pop2").css('top', 1276 / 2436 * screenHeight);
+        $(".pop3").css('top', 1536 / 2436 * screenHeight);
+        $(".cloudcoverriver ").css('top', 577 / 2436 * screenHeight);
+        $(".cir11").css('top', 577 / 2436 * screenHeight);
+    })
+</script>
+<script src="./js/own/share.js"></script>
+<script src="./js/own/index.js"></script>

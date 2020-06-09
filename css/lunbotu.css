@@ -1,0 +1,341 @@
+/*!
+ * ETUI v2.2
+ *
+ * Copyright 2014 东方怡动信息技术有限公司
+ */
+
+/* ---------通用样式定义--------- */
+
+/*首页幻灯大图 */
+.homeSlider .owl-carousel,.homeSlider2 .owl-carousel,.homeSlider3 .owl-carousel {position: relative;}
+.homeSlider2 .owl-carousel{
+	width:91%;
+	margin:0 auto;
+}
+.homeSlider3 .owl-carousel{
+	width:93%;
+	margin:0 auto;
+}
+.homeSlider .owl-theme .owl-controls .owl-page span {background: #fff;/*border:1px solid #848485; */}
+.homeSlider .owl-pagination {position: absolute;bottom: 5px; right: 3%;}
+.homeSlider #owl-homeSlider .owl-pagination {position: absolute;bottom: 42px; right: 3%;}
+.homeSlider2 .owl-pagination,.homeSlider3 .owl-pagination{display:none;}
+.homeSlider .clickable {cursor: default;}
+.homeSlider .item{width: 100%;*height:300px;display: block;overflow: hidden;position: relative;}
+.homeSlider .owl-theme .owl-controls .owl-buttons div,.homeSlider2 .owl-theme .owl-controls .owl-buttons div{height: 25px;width: 15px;border-radius: 0;padding: 0;opacity: 0.8;}
+.homeSlider3 .owl-theme .owl-controls .owl-buttons div {height: 37px;width: 23px;border-radius: 0;padding: 0;opacity: 0.8;}
+.homeSlider .owl-buttons  div.owl-next,.homeSlider .owl-buttons  div.owl-prev{position: absolute;top: 35%;}
+.homeSlider2 .owl-buttons  div.owl-next,.homeSlider2 .owl-buttons  div.owl-prev{position: absolute;top: 42%;}
+.homeSlider3 .owl-buttons  div.owl-next,.homeSlider3 .owl-buttons  div.owl-prev{position: absolute;top: 27%;}
+ .homeSlider .owl-buttons  div.owl-next {background: url(../images/jiantou2_31.png);right: 0;}
+  .homeSlider2 .owl-buttons  div.owl-next {background: url(../images/jiantou2_31.png) no-repeat;right: -9%;background-size: 100% 100%;}
+  .homeSlider3 .owl-buttons  div.owl-next {background: url(../images/jiantou2_20.png) no-repeat;right: -4.5%;background-size: 100% 100%;}
+/*    .homeSlider2 .owl-buttons  div.owl-next:hover {background: url(../images/jiantou22_20.png) no-repeat;right: -8%;}
+*/  .homeSlider3 .owl-buttons  div.owl-next:hover {background: url(../images/jiantou22_20.png) no-repeat;right: -4%;background-size: 100% 100%;}
+.homeSlider .owl-buttons  div.owl-prev {background: url(../images/jiantou1_30.jpg);left: 0;} 
+.homeSlider2 .owl-buttons  div.owl-prev {background: url(../images/jiantou_31.png) no-repeat;left: -9%;background-size: 100% 100%;} 
+.homeSlider3 .owl-buttons  div.owl-prev {background: url(../images/jiantou_20.png) no-repeat;left: -4.5%;background-size: 100% 100%;} 
+/*.homeSlider2 .owl-buttons  div.owl-prev:hover {background: url(../images/jiantou11_20.png) no-repeat;left: -7%;} 
+*/.homeSlider3 .owl-buttons  div.owl-prev:hover {background: url(../images/jiantou11_20.png) no-repeat;left: -4%;background-size: 100% 100%;} 
+.homeSlider .carousel-caption{padding: 10px;*width: 100% !important;*display: block;}
+.homeSlider .carousel-caption h4 { width:85%;font-size: 16px;font-weight: normal;margin: 0;overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;display: block}
+.homeSlider .item img{width: 100%;position: relative;max-width: inherit;}
+.homeSlider .owl-controls{margin: 0;}
+.owl-theme .owl-controls .owl-page.active, .owl-theme .owl-controls.clickable .owl-page:hover{background: none !important;}
+
+.carousel {
+	position: relative;
+	margin-bottom: 20px;
+	line-height: 1
+}
+
+.carousel-inner {
+	position: relative;
+	width: 100%;
+	overflow: hidden
+}
+
+.carousel-inner>.item {
+	position: relative;
+	display: none;
+	-webkit-transition: .6s ease-in-out left;
+	-moz-transition: .6s ease-in-out left;
+	-o-transition: .6s ease-in-out left;
+	transition: .6s ease-in-out left
+}
+
+.carousel-inner>.item>img,.carousel-inner>.item>a>img {
+	display: block;
+	line-height: 1
+}
+
+.carousel-inner>.active,.carousel-inner>.next,.carousel-inner>.prev {
+	display: block
+}
+
+.carousel-inner>.active {
+	left: 0
+}
+
+.carousel-inner>.next,.carousel-inner>.prev {
+	position: absolute;
+	top: 0;
+	width: 100%
+}
+
+.carousel-inner>.next {
+	left: 100%
+}
+
+.carousel-inner>.prev {
+	left: -100%
+}
+
+.carousel-inner>.next.left,.carousel-inner>.prev.right {
+	left: 0
+}
+
+.carousel-inner>.active.left {
+	left: -100%
+}
+
+.carousel-inner>.active.right {
+	left: 100%
+}
+
+.carousel-control {
+	position: absolute;
+	top: 40%;
+	left: 15px;
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	font-size: 60px;
+	font-weight: 100;
+	line-height: 30px;
+	color: #fff;
+	text-align: center;
+	background: #222;
+	border: 3px solid #fff;
+	-webkit-border-radius: 23px;
+	-moz-border-radius: 23px;
+	border-radius: 23px;
+	opacity: .5;
+	filter: alpha(opacity=50)
+}
+
+.carousel-control.right {
+	right: 15px;
+	left: auto
+}
+
+.carousel-control:hover,.carousel-control:focus {
+	color: #fff;
+	text-decoration: none;
+	opacity: .9;
+	filter: alpha(opacity=90)
+}
+
+.carousel-indicators {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	z-index: 5;
+	margin: 0;
+	list-style: none
+}
+
+.carousel-indicators li {
+	display: block;
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin-left: 5px;
+	text-indent: -999px;
+	background-color: #ccc;
+	background-color: rgba(255,255,255,0.25);
+	border-radius: 5px
+}
+
+.carousel-indicators .active {
+	background-color: #fff
+}
+
+.carousel-caption {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 15px;
+	background: #333;
+	background: rgba(0,0,0,0.75)
+}
+
+.carousel-caption h4,.carousel-caption p {
+	line-height: 20px;
+	color: #fff
+}
+
+.carousel-caption h4 {
+	margin: 0 0 5px
+}
+
+.carousel-caption p {
+	margin-bottom: 0
+}
+
+
+.homeSlider2 .jiyu3{
+	display: block;
+	padding:0 3%;
+	   margin:0px 6%;
+    background:#de2c3a;
+    height:268px;
+}
+
+.homeSlider3 .zhiji3{
+	display: block;
+	   margin:0px 5%;
+
+}
+
+
+.homeSlider2 .jiyu3 img{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	display: block;
+		  
+}
+
+.homeSlider2 .jiyu3 h3{
+	text-align: center;
+	font:15px/15px "Microsoft YaHei";
+	color:#fff;
+	padding:18px 0 12px 0;
+}
+
+.homeSlider3 .zhiji3 img{
+	width:100%;
+	margin:0 auto;
+	height:auto;
+	display: block;
+		/*border:1px solid #a5a5a4;
+	   padding:2%;
+	   background: #fff;*/
+}
+
+
+
+.homeSlider3 .zhiji4{
+	background:#d5d0c9;
+}
+
+.homeSlider3 .zhiji4 p{
+	width:70%;
+	text-align: center;
+	margin:0 auto;
+	font:16px/22px "Microsoft YaHei";
+	background:#d5d0c9;
+	color:#2e2e2e;
+	padding:10px 0;
+}
+
+.homeSlider2 .jiyu4{
+	width:100%;
+	padding-top: 18px;
+}
+
+.homeSlider2 .jiyu4 span{
+	display: block;
+	width:100%;
+	margin:0 auto;
+	text-align: center;
+	font:16px/36px "Microsoft YaHei";
+	color:#333333;
+	font-weight: bold;
+}
+
+.homeSlider2 .jiyu4 p{
+	width:100%;
+	text-align: justify;
+	font:14px/26px "Microsoft YaHei";
+	color:#fff;
+}
+
+.homeSlider3 .jigou{
+	display: block;
+	   margin:0px 4%;
+}
+
+.homeSlider3 .jigou img{
+	width:100%;
+	height:auto;
+	display: block;
+}
+
+
+
+
+@media screen and (max-width : 768px){
+.homeSlider .owl-pagination {position: absolute;bottom: 50px; right: 40%;*bottom: 8px;}	
+}
+
+@media screen and (max-width : 480px){
+.homeSlider .owl-pagination {position: absolute;bottom: 5px; right:0%;}	
+.homeSlider2 .jiyu4 span{
+  display: block;
+  width:100%;
+  margin:0 auto;
+  text-align: center;
+  font:13px/36px "Microsoft YaHei";
+  color:#333333;
+  font-weight: bold;
+}
+
+.homeSlider2 .jiyu4 p{
+  width:100%;
+  text-align: center;
+  font:12px/22px "Microsoft YaHei";
+  color:#fff;
+}
+
+/*.homeSlider2 .owl-buttons  div.owl-prev {
+	background: url(../images/jiantou_20.png) no-repeat;background-size: 90% 90%;left: -8%;
+} 
+
+
+ .homeSlider2 .owl-buttons  div.owl-next {
+ 	background: url(../images/jiantou2_20.png) no-repeat;background-size: 90% 90%;right: -8%;
+ }*/
+
+ .homeSlider3 .owl-buttons  div.owl-prev {background: url(../images/jiantou_20.png) no-repeat;left: -8%;background-size: 90% 90%;} 
+  .homeSlider3 .owl-buttons  div.owl-next {background: url(../images/jiantou2_20.png) no-repeat;right: -8%;background-size: 90% 90%;}
+/*.homeSlider2 .owl-buttons  div.owl-prev:hover {background: url(../images/jiantou11_20.png) no-repeat;left: -8%;} 
+*/.homeSlider3 .owl-buttons  div.owl-prev:hover {background: url(../images/jiantou11_20.png) no-repeat;left: -8%;background-size: 100% 100%;} 
+/*    .homeSlider2 .owl-buttons  div.owl-next:hover {background: url(../images/jiantou22_20.png) no-repeat;right: -8%;}
+*/  .homeSlider3 .owl-buttons  div.owl-next:hover {background: url(../images/jiantou22_20.png) no-repeat;right: -8%;background-size: 100% 100%;}
+.homeSlider3 .zhiji3 p{
+	width:100%;
+	text-align: center;
+	margin:0 auto;
+	font:13px/18px "SimSun";
+	color:#333333;
+}
+
+.homeSlider2 .owl-carousel{
+	width: 90%;
+	margin:0 auto;
+}
+
+.homeSlider2 .jiyu3{
+	display: block;
+	padding:0 3%;
+	margin:0px 6%;
+	background:#de2c3a;
+	height: 246px;
+}
+
+}

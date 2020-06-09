@@ -1,0 +1,94 @@
+[{
+    "divClassName": "pop1Img",
+    "closeClassName": "close1",
+    "h3ClassName": "point1",
+    "titleImg": "images/pop1title.png",
+    "textArea": {
+        "title": "海洋微塑料",
+        "Paragraph": [{
+            "ParagraphHead": "海洋微塑料是什么？",
+            "ParagraphContent": ["塑料在使用后，一部分由于收集处理不及时，发生破碎、降解，给地表水、土壤和海洋等带来严重污染。调查发现，从近海到大洋，从赤道到极地，从海洋表层到大洋深处，海洋微塑料无处不在。目前含量是之前估计值的100万倍。"]
+        }, {
+            "ParagraphHead": "海洋微塑料从哪里来？",
+            "ParagraphContent": ["一是来自陆源的工业污水、生活污水及垃圾堆放;二是来自海边养殖业、捕捞业及娱乐活动引入的塑料降解; 三是来自海洋中捕鱼、船只运输及海上作业等活动带入的塑料降解。"]
+        }, {
+            "ParagraphHead": "海洋微塑料有危害么？",
+            "ParagraphContent": ["微塑料被海洋生物以及海鸟等动物所吞食，其有毒成份在有机生物体内不断积累，不仅威胁到这些生物本身，也有可能随之进入食物链，造成更广泛的危害。"]
+        }, {
+            "ParagraphHead": "该如何防范和治理它？",
+            "ParagraphContent": ["一是控制污染源头;二是强化污染治理;这首先需要国家制定有关法律法规强力监管和控制塑料的使用;其次需要生产企业改进塑料生产工艺和方法，或采用新型可降解材料代替传统塑料；再次需要我们公民增强海洋环保意识，尽量减少或禁止使用塑料制品，在海边游玩不乱扔而是随手带走看到的塑料垃圾。同时必须及时治理海洋微塑料污染，尤其在饮用水和污水处理环节要加强监测，并采用高效又经济的方式处理微塑料污染。"]
+        }],
+        "contentImgSrc": []
+    }
+}, {
+    "divClassName": "pop2Img",
+    "closeClassName": "close2",
+    "h3ClassName": "point2",
+    "titleImg": "images/pop2title.png",
+    "textArea": {
+        "title": "海洋酸化",
+        "Paragraph": [{
+            "ParagraphHead": "海洋酸化是怎么回事？",
+            "ParagraphContent": ["海洋酸化是海水吸收了空气中过量的二氧化碳，导致酸碱度降低的现象。产生原因是人类开采使用煤、石油和天然气等化石燃料，并砍伐大量森林，致使大气中碳含量水平逐年上升。"]
+        }, {
+            "ParagraphHead": "海洋酸化可怕不可怕？",
+            "ParagraphContent": ["海洋酸化不仅改变了海洋的化学成分，破坏了海洋生物的生存环境，影响了很多物种的生长、繁殖以及抵抗疾病的能力，造成极为广泛的生态危害，还加速腐蚀我们的海岸和海洋工程。", "海洋酸化的自然恢复至少需要数千年，遏制海洋酸化的唯一有效途径就是尽快减少CO2的全球排放量。"]
+        }],
+        "contentImgSrc": []
+    }
+}, {
+    "divClassName": "pop3Img",
+    "closeClassName": "close3",
+    "h3ClassName": "point3",
+    "titleImg": "images/pop3title.png",
+    "textArea": {
+        "title": "海洋酸化",
+        "Paragraph": [{
+            "ParagraphHead": "海洋酸化是怎么回事？",
+            "ParagraphContent": ["海洋酸化是海水吸收了空气中过量的二氧化碳，导致酸碱度降低的现象。产生原因是人类开采使用煤、石油和天然气等化石燃料，并砍伐大量森林，致使大气中碳含量水平逐年上升。"]
+        }, {
+            "ParagraphHead": "海洋酸化可怕不可怕？",
+            "ParagraphContent": ["海洋酸化不仅改变了海洋的化学成分，破坏了海洋生物的生存环境，影响了很多物种的生长、繁殖以及抵抗疾病的能力，造成极为广泛的生态危害，还加速腐蚀我们的海岸和海洋工程。", "海洋酸化的自然恢复至少需要数千年，遏制海洋酸化的唯一有效途径就是尽快减少CO2的全球排放量。"]
+        }],
+        "contentImgSrc": []
+    }
+}, {
+    "divClassName": "pop4Img",
+    "closeClassName": "close4",
+    "h3ClassName": "point4",
+    "titleImg": "images/pop4title.png",
+    "textArea": {
+        "title": "我们做了什么？",
+        "Paragraph": [{
+            "ParagraphHead": "",
+            "ParagraphContent": ["以陆海统筹和海洋生态文明建设思想为统领，聚焦市局海洋职责，“十三五”以来，上海市海洋规划设计研究院以海洋科技研究和海洋规划编制，为上海市海洋生态环境保护修复和临港新片区陆海统筹发展贡献着技术力量。"]
+        }],
+        "contentImgSrc": []
+    }
+}, {
+    "divClassName": "pop5Img",
+    "closeClassName": "close5",
+    "h3ClassName": "point5",
+    "titleImg": "images/pop5title.jpg",
+    "textArea": {
+        "title": "支撑长江口杭州湾水域生态保护修复",
+        "Paragraph": [{
+            "ParagraphHead": "",
+            "ParagraphContent": ["通过“江海联动水动力水质基础调查及数值模拟”、长江口杭州湾水域纳污能力及限制排污总量”、“舟山绿色石化基地突发溢油对上海海洋环境影响”等项目研究，构建了MIKE21和MIKE3二维和三维水动力水质模型、长江口杭州湾多藻类生态动力学模型、污染源总量分配的线性规划模型、长江口杭州湾突发溢油模拟模型，模拟反演了藻类季节性演替规律，明确了相关污染物最大允许排放量和削减比例，提出了应对突发水污染事故的对策措施，为长江口杭州湾环境生态保护治理提供了技术支撑和科学依据。"]
+        }],
+        "contentImgSrc": []
+    }
+}, {
+    "divClassName": "pop6Img",
+    "closeClassName": "close6",
+    "h3ClassName": "point6",
+    "titleImg": "images/pop6title.jpg",
+    "textArea": {
+        "title": "支撑新片区陆海资源生态统筹利用保护",
+        "Paragraph": [{
+            "ParagraphHead": "",
+            "ParagraphContent": ["通过《中国（上海）自由贸易试验区临港新片陆海统筹规划》编制，探索建立了临港新片区海岸带陆海统筹发展模式，优化了陆海空间资源开发格局，建立了陆海灾害防御体系，细化了海陆经济统筹方式，构建了陆海生态环境协同治理格局，为相关职能部门推进临港新片区陆海资源协同开发、生态环境统筹治理提供技术支撑和科学依据。"]
+        }],
+        "contentImgSrc": ["images/pop6title2.jpg", "images/pop6title1.jpg"]
+    }
+}]
