@@ -2038,12 +2038,14 @@ canvas {
     border-bottom: 3px solid rgb(121, 255, 219);
     margin: 0 auto;
     margin-bottom: 20px;
+    position: absolute;
+    top: 0px;
+    left: 35.5%;
 }
 
 .popbg2 {
     width: 85%;
     height: 76vh;
-    /* background: url(../images/pop2bg.png) no-repeat; */
     background-size: 100% 100%;
     position: relative;
 }
@@ -2053,9 +2055,10 @@ canvas {
     font-weight: bold;
     text-align: center;
     font-size: 1rem;
-    padding-top: 5px;
+    padding-top: 0px;
     width: 31%;
-    line-height: 3;
+    padding-bottom: 5px;
+    line-height: 6;
     height: -moz-calc(10% - (8px));
     height: -webkit-calc(10% - (8px));
     height: calc(10% - (8px));
@@ -2064,7 +2067,12 @@ canvas {
     position: relative;
 }
 
-.popbg2 {
+.popbg1,
+.popbg2,
+.popbg3,
+.popbg4,
+.popbg5,
+.popbg6 {
     width: 85%;
     height: 76vh;
     /* background: url(../images/pop3bg.png) no-repeat; */
@@ -2072,7 +2080,47 @@ canvas {
     position: relative;
 }
 
+.popbg1border {
+    width: 100%;
+    height: 10%;
+    background: url(../images/弹出框1.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+}
+
 .popbg2border {
+    width: 100%;
+    height: 10%;
+    background: url(../images/弹出框1.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+.popbg3border {
+    width: 100%;
+    height: 10%;
+    background: url(../images/弹出框1.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+.popbg4border {
+    width: 100%;
+    height: 10%;
+    background: url(../images/弹出框1.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+.popbg5border {
+    width: 100%;
+    height: 10%;
+    background: url(../images/弹出框1.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+.popbg6border {
     width: 100%;
     height: 10%;
     background: url(../images/弹出框1.png) no-repeat;
@@ -2098,8 +2146,9 @@ canvas {
     width: 100%;
     height: 10%;
     background: url(../images/弹出框2.png) no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: relative;
+    background-size: 100% 100%;
 }
 
 .popbg3>h2 {
@@ -2118,13 +2167,14 @@ canvas {
     left: 35.5%;
 }
 
-.popbg4 {
+
+/* .popbg4 {
     width: 85%;
     height: 76vh;
     background: url(../images/pop4bg.png);
     background-size: 100% 100%;
     position: relative;
-}
+} */
 
 .popbg4>h2 {
     color: white;
@@ -2139,13 +2189,14 @@ canvas {
     margin-bottom: 20px;
 }
 
-.popbg5 {
+
+/* .popbg5 {
     width: 85%;
     height: 76vh;
     background: url(../images/pop5bg.png);
     background-size: 100% 100%;
     position: relative;
-}
+} */
 
 .popbg5>h2 {
     color: white;
@@ -2160,13 +2211,14 @@ canvas {
     margin-bottom: 20px;
 }
 
-.popbg6 {
+
+/* .popbg6 {
     width: 85%;
     height: 76vh;
     background: url(../images/pop6bg.png);
     background-size: 100% 100%;
     position: relative;
-}
+} */
 
 .popbg6>h2 {
     color: white;

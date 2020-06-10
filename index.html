@@ -149,11 +149,30 @@
                         <p>海洋酸化是海水吸收了空气中过量的二氧化碳，导致酸碱度降低的现象。产生原因是人类开采使用煤、石油和天然气等化石燃料，并砍伐大量森林，致使大气中碳含量水平逐年上升。</p>
                     </div>
                 </div>
-                <div class="close2"> 关 闭</div>
+
+                <a class="close2" href="javascript:void(0)">关 闭</a>
                 <div></div>
             </div>
         </div>
     </div>
+
+    <!-- <div class="${item.divClassName}">
+        <div class="zhezhao2">
+            <div class="popbg${i+1} ma">
+                <div class="popbg2border"></div>
+                <h2>${item.textArea.title}</h2>
+                <div class="scrollDiv2">
+                    <img src="${item.titleImg}" alt="">
+                    <div class="intro ma">
+                        ${textArea}
+                    </div>
+                    ${contentImg}
+                </div>
+                <a class="close${i+1}">关 闭</a>
+                <div></div>
+            </div>
+        </div>
+    </div> -->
 
 </body>
 
@@ -178,23 +197,24 @@
         })
 
 
-        let temp = `
-            <div class="${item.divClassName}">
-            <div class="zhezhao2">
+        let temp = `   
+        <div class="${item.divClassName}">
+        <div class="zhezhao2">
             <div class="popbg${i+1} ma">
-                <h2> ${item.textArea.title}</h2>
-                <div class="scrollDiv">
-                    <img src=" ${item.titleImg}" alt="">
+                <div class="popbg${i+1}border"></div>
+                <h2>${item.textArea.title}</h2>
+                <div class="scrollDiv2">
+                    <img src="${item.titleImg}" alt="">
                     <div class="intro ma">
                         ${textArea}
                     </div>
                     ${contentImg}
                 </div>
-                <div class="${item.closeClassName}"> 关 闭</div>
+                <a class="close${i+1}">关 闭</a>
+                <div></div>
             </div>
-        </div>
-        </div>
-            `
+            </div>
+        </div>`
         return temp;
 
     }
