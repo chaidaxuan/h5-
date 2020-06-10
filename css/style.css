@@ -452,6 +452,16 @@ canvas {
     text-align: center;
 }
 
+.scrollDiv2 {
+    background: url(../images/弹出框line1.png) repeat-y;
+    /* background-color: #669966; */
+    /* background-image: linear-gradient(#5fa73a, #6eae4c); */
+    height: 60vh;
+    width: 100%;
+    overflow: scroll;
+    text-align: center;
+}
+
 .poptitle1 {
     width: 85%;
     border-radius: 15px;
@@ -839,7 +849,7 @@ canvas {
     height: 13px;
     position: absolute;
     top: 4px;
-    left: 110px;
+    left: 110%;
     z-index: 2;
     opacity: 1;
 }
@@ -2033,7 +2043,7 @@ canvas {
 .popbg2 {
     width: 85%;
     height: 76vh;
-    background: url(../images/pop2bg.png) no-repeat;
+    /* background: url(../images/pop2bg.png) no-repeat; */
     background-size: 100% 100%;
     position: relative;
 }
@@ -2041,21 +2051,54 @@ canvas {
 .popbg2>h2 {
     color: white;
     font-weight: bold;
-    line-height: 1.8;
     text-align: center;
     font-size: 1rem;
-    padding-top: 14px;
+    padding-top: 5px;
     width: 31%;
+    line-height: 3;
+    height: -moz-calc(10% - (8px));
+    height: -webkit-calc(10% - (8px));
+    height: calc(10% - (8px));
     border-bottom: 3px solid rgb(218, 254, 148);
     margin: 0 auto;
-    margin-bottom: 20px;
+    position: relative;
 }
 
-.popbg3 {
+.popbg2 {
     width: 85%;
     height: 76vh;
-    background: url(../images/pop3bg.png) no-repeat;
+    /* background: url(../images/pop3bg.png) no-repeat; */
     background-size: 100% 100%;
+    position: relative;
+}
+
+.popbg2border {
+    width: 100%;
+    height: 10%;
+    background: url(../images/弹出框1.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+.scrollDiv2>img {
+    width: 85%;
+    margin-top: 10px;
+}
+
+
+/* .popbg3 :last-child {
+    width: 100%;
+    height: 10vh;
+    background: url(../images/弹出框1.png) no-repeat;
+    background-size: cover;
+    position: relative;
+} */
+
+.close2+div {
+    width: 100%;
+    height: 10%;
+    background: url(../images/弹出框2.png) no-repeat;
+    background-size: cover;
     position: relative;
 }
 
@@ -2070,6 +2113,9 @@ canvas {
     border-bottom: 3px solid rgb(130, 218, 255);
     margin: 0 auto;
     margin-bottom: 20px;
+    position: absolute;
+    top: 0px;
+    left: 35.5%;
 }
 
 .popbg4 {

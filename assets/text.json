@@ -7,3 +7,21 @@
         ]
     }
 }
+
+{
+    "divClassName": "pop2Img",
+    "closeClassName": "close2",
+    "h3ClassName": "point2",
+    "titleImg": "images/pop2title.png",
+    "textArea": {
+        "title": "海洋酸化",
+        "Paragraph": [{
+            "ParagraphHead": "海洋酸化是怎么回事？",
+            "ParagraphContent": ["海洋酸化是海水吸收了空气中过量的二氧化碳，导致酸碱度降低的现象。产生原因是人类开采使用煤、石油和天然气等化石燃料，并砍伐大量森林，致使大气中碳含量水平逐年上升。"]
+        }, {
+            "ParagraphHead": "海洋酸化可怕不可怕？",
+            "ParagraphContent": ["海洋酸化不仅改变了海洋的化学成分，破坏了海洋生物的生存环境，影响了很多物种的生长、繁殖以及抵抗疾病的能力，造成极为广泛的生态危害，还加速腐蚀我们的海岸和海洋工程。", "海洋酸化的自然恢复至少需要数千年，遏制海洋酸化的唯一有效途径就是尽快减少CO2的全球排放量。"]
+        }],
+        "contentImgSrc": []
+    }
+}

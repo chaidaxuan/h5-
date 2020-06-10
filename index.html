@@ -136,6 +136,25 @@
             </div>
         </div>
     </div>
+
+    <div class="pop2Img">
+        <div class="zhezhao2">
+            <div class="popbg2 ma">
+                <div class="popbg2border"></div>
+                <h2>海洋酸化</h2>
+                <div class="scrollDiv2">
+                    <img src="./images/pop2title.png" alt="">
+                    <div class="intro ma">
+                        <h3 class="point2">海洋酸化是怎么回事？</h3>
+                        <p>海洋酸化是海水吸收了空气中过量的二氧化碳，导致酸碱度降低的现象。产生原因是人类开采使用煤、石油和天然气等化石燃料，并砍伐大量森林，致使大气中碳含量水平逐年上升。</p>
+                    </div>
+                </div>
+                <div class="close2"> 关 闭</div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
@@ -192,7 +211,6 @@
     }
     $.get('./assets/pop.json', (data) => {
         dataPop = data;
-        debugger
     }).then(() => {
         getnoApplicationData();
     })
@@ -205,7 +223,12 @@
         $(".pop2").css('top', 1276 / 2436 * screenHeight);
         $(".pop3").css('top', 1536 / 2436 * screenHeight);
         $(".cloudcoverriver ").css('top', 577 / 2436 * screenHeight);
-        $(".cir11").css('top', 577 / 2436 * screenHeight);
+        $(".pop5").css('bottom', 297 / 2436 * screenHeight);
+        $(".pop6").css('bottom', 57 / 2436 * screenHeight);
+
+        $(".cirWrap1").css('top', 582 / 2436 * screenHeight);
+        $(".title2").css('top', 780 / 2436 * screenHeight);
+        $(".title1").css('bottom', 323 / 2436 * screenHeight);
     })
 </script>
 <script src="./js/own/share.js"></script>
